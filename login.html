@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="stylish.css">
+  <script defer src="style.js"></script> <!-- use defer and only once -->
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="Logo VC.jpeg" alt="Virtual Closet Logo">
+      </div>
+    
+    <nav>
+      <a href="home.html" class="nav-btn"><b>Home</b></a>
+      <a href="preference.html" class="nav-btn"><b>Your Preference</b></a>
+      <a href="tryon.html" class="nav-btn"><b>Virtual Try-On</b></a>
+      <a href="trending.html" class="nav-btn"><b>Trending</b></a>
+      <a href="about.html" class="nav-btn"><b>About & Contact</b></a>
+      <a href="login.html" class="nav-btn"><b>Login/Sign up</b></a>
+    </nav>
+  </header>
+
+  <section class="login-section">
+
+  <section id="login-signup">
+    <div class="container" id="form-container">
+      <!-- Login Form -->
+      <form id="login-form">
+        <h2>Login</h2>
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" required>
+        
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required>
+  
+        <button type="submit" class="submit-btn">Login</button>
+  
+        <p class="form-toggle-text">New user? 
+          <a href="#" id="show-signup">Sign up</a>
+        </p>
+  
+        <div class="google-btn">
+          <button type="button">
+            <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Gmail Logo" style="vertical-align: middle; margin-right: 8px;">
+            Login with Gmail
+          </button>
+        </div>
+      </form>
+
+      <!-- Signup Form -->
+      <form id="signup-form" class="hidden">
+        <h2>Sign Up</h2>
+        <label for="signup-username">Username</label>
+        <input type="text" id="signup-username" required>
+        
+        <label for="signup-password">Create new Password</label>
+        <input type="password" id="signup-password" required>
+  
+        <label for="signup-confirm">Confirm new Password</label>
+        <input type="password" id="signup-confirm" required>
+  
+        <button type="submit" class="submit-btn">Sign Up</button>
+  
+        <p class="form-toggle-text">Already registered? 
+          <a href="#" id="show-login">Log in</a>
+        </p>
+  
+        <div class="google-btn">
+          <button type="button">
+            <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Gmail Logo" style="vertical-align: middle; margin-right: 8px;">
+            Sign up with Gmail
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</section>
+</body>
+</html>
